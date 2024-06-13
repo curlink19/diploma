@@ -35,3 +35,36 @@
 \caption{Графики функции ошибки и некоторых метрик для каждого варианта позиций mixup.}
 \label{tab:mixup_position}
 \end{longtable}
+
+
+\begin{longtable}{cc}
+\centering
+    \includegraphics[scale=0.2]{./images/mixup_position/all/WordAcc.png} &
+    \includegraphics[scale=0.2]{./images/mixup_position/all/CharAcc.png} \\
+    \includegraphics[scale=0.2]{./images/mixup_position/all/FragAcc.png} &
+    \includegraphics[scale=0.2]{./images/mixup_position/all/ValidLoss.png} \\
+\caption{Функция ошибки и различные метрики для всех рассматриваемых наборов позиций mixup.}
+\label{tab:mixup_position_metrics}
+\end{longtable}
+
+\subsection{Количество данных}
+
+\begin{longtable}{cccc}
+\centering
+\includegraphics[scale=0.2]{./images/mixup_size/100_ValidLoss.png} & \includegraphics[scale=0.2]{./images/mixup_size/100_CharAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/100_FragAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/100_WordAcc.png}\\
+\includegraphics[scale=0.2]{./images/mixup_size/500_ValidLoss.png} & \includegraphics[scale=0.2]{./images/mixup_size/500_CharAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/500_FragAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/500_WordAcc.png}\\
+\includegraphics[scale=0.2]{./images/mixup_size/1000_ValidLoss.png} & \includegraphics[scale=0.2]{./images/mixup_size/1000_CharAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/1000_FragAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/1000_WordAcc.png}\\
+\includegraphics[scale=0.2]{./images/mixup_size/4000_ValidLoss.png} & \includegraphics[scale=0.2]{./images/mixup_size/4000_CharAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/4000_FragAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/4000_WordAcc.png}\\
+\includegraphics[scale=0.2]{./images/mixup_size/8000_ValidLoss.png} & \includegraphics[scale=0.2]{./images/mixup_size/8000_CharAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/8000_FragAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/8000_WordAcc.png}\\
+\includegraphics[scale=0.2]{./images/mixup_size/10000_ValidLoss.png} & \includegraphics[scale=0.2]{./images/mixup_size/10000_CharAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/10000_FragAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/10000_WordAcc.png}\\
+\caption{Сравнение ванильной модели и mixup на различных размерах датасета. }
+\label{tab:mixup_size}
+\end{longtable}
+
+\begin{longtable}{cc}
+\centering
+\includegraphics[scale=0.4]{./images/mixup_size/all/ValidLoss.png} & \includegraphics[scale=0.4]{./images/mixup_size/all/CharAcc.png}\\
+\includegraphics[scale=0.4]{./images/mixup_size/all/FragAcc.png} & \includegraphics[scale=0.4]{./images/mixup_size/all/WordAcc.png}\\
+\caption{Сравнение метрик для ванильной модели и mixup в зависимости от размера датасета.}
+\label{tab:mixup_size_all}
+\end{longtable}
