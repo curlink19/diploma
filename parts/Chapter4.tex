@@ -28,7 +28,7 @@ x = self.final_drop(x)
 \item Позиции в наборе не идут последовательно друг за другом в порядке операций.
 \end{enumerate}
 
-Каждый набор позиций был проверен на части датасета размером в $N = 128'000$ образцов \hyperref[tab:mixup_position]{[Таблица 2]}. Как по всем метрикам, так и по функции ошибки, набор before-block0;before-block3 оказался наилучшим \hyperlink{image13}{[Рис 13.]} \hyperref[tab:mixup_position_metrics]{[Таблица 3]}.
+Каждый набор позиций был проверен на части датасета размером в $N = 128'000$ образцов \hyperref[tab:mixup_position]{[Таблица 2]}. Как по всем метрикам, так и по функции ошибки, набор before-block0;before-block3 оказался наилучшим \hyperlink{image13}{[Рис 13.]} \hyperref[tab:mixup_position_metrics]{[Таблица 3]}. Далее, если не сказано иного, в качестве набора позиций для mixup везде берется before-block0;before-block3.
 
 \newpage
 \subsection{Зависимость от количества данных}
@@ -45,6 +45,11 @@ x = self.final_drop(x)
  \hline
 \end{tabular}
 \caption{Функция ошибки и метрики при $N = 640'000$ образцах}
+\label{tab:mixup_size_max}
 \end{table}
+
+Исследовалась зависимость вклада mixup на обучение от количества данных. Эксперименты проводились со следующими размерами датасетов (в образцах):\\ $6400, 32000, 64000, 256000, 512000, 640000$.
+
+Согласно результатам \hyperref[tab:mixup_size_max]{[Таблица 1]} \hyperref[tab:mixup_size]{[Таблица 4]} \hyperref[tab:mixup_size_all]{[Таблица 5]}, mixup улучшает все метрики на лаюбом колиестве данных. Более того, mixup хорошо препятсвует переобучению \hyperref[tab:mixup_size]{[Таблица 4]}. 
 
 \newpage
