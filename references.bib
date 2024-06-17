@@ -1,261 +1,310 @@
 %% Manifold Mixup
-@article{Ver18,
-    author = "Verma Vikas and Lamb Alex and Beckham Christopher and Najafi Amir and Mitliagkas Ioannis and Courville Aaron and Lopez-Paz David and Bengio Yoshua",
-    title = "Manifold Mixup: Better Representations by Interpolating Hidden States",
-    journal = "\href{https://arxiv.org/abs/1806.05236}{arXiv:1806.05236}",
-    year = 2018,
-    langid = "english"
+@InProceedings{Ver18,
+  title =    {Manifold Mixup: Better Representations by Interpolating Hidden States},
+  author =       {Verma, Vikas and Lamb, Alex and Beckham, Christopher and Najafi, Amir and Mitliagkas, Ioannis and Lopez-Paz, David and Bengio, Yoshua},
+  booktitle =    {Proceedings of the 36th International Conference on Machine Learning},
+  pages =    {6438--6447},
+  year =     {2019},
+  editor =   {Chaudhuri, Kamalika and Salakhutdinov, Ruslan},
+  volume =   {97},
+  series =   {Proceedings of Machine Learning Research},
+  month =    {09--15 Jun},
+  publisher =    {PMLR},
+  pdf =      {http://proceedings.mlr.press/v97/verma19a/verma19a.pdf},
+  url =      {https://proceedings.mlr.press/v97/verma19a.html},
+  abstract =     {Deep neural networks excel at learning the training data, but often provide incorrect and confident predictions when evaluated on slightly different test examples. This includes distribution shifts, outliers, and adversarial examples. To address these issues, we propose \manifoldmixup{}, a simple regularizer that encourages neural networks to predict less confidently on interpolations of hidden representations. \manifoldmixup{} leverages semantic interpolations as additional training signal, obtaining neural networks with smoother decision boundaries at multiple levels of representation. As a result, neural networks trained with \manifoldmixup{} learn flatter class-representations, that is, with fewer directions of variance. We prove theory on why this flattening happens under ideal conditions, validate it empirically on practical situations, and connect it to the previous works on information theory and generalization. In spite of incurring no significant computation and being implemented in a few lines of code, \manifoldmixup{} improves strong baselines in supervised learning, robustness to single-step adversarial attacks, and test log-likelihood.}
 }
 
 %% CTC
-@conference{Gra06,
-    author = "Graves Alex and Fern Santiago and Gomez Faustino and Schmidhuber J¨urgen",
-    title = "Connectionist Temporal Classification: Labelling Unsegmented Sequence Data with Recurrent Neural Networks",
-    booktitle = "\href{https://www.cs.toronto.edu/~graves/icml_2006.pdf}{International Conference on Machine Learning}",
-    year = 2006,
-    langid = "english"
+@inproceedings{Gra06,
+  title={Connectionist temporal classification: labelling unsegmented sequence data with recurrent neural networks},
+  author={Graves, Alex and Fern{\'a}ndez, Santiago and Gomez, Faustino and Schmidhuber, J{\"u}rgen},
+  booktitle={Proceedings of the 23rd international conference on Machine learning},
+  pages={369--376},
+  year={2006},
+  url={https://www.cs.toronto.edu/~graves/icml_2006.pdf}
 }
 
 %% Attention
-@article{Vas17,
-    author = "Vaswani Ashish and Shazeer Noam and Parmar Niki and Uszkoreit Jakob and Jones Llion and Gomez N. Aidan and Kaiser Lukasz and Polosukhin Illia",
-    title = "Attention Is All You Need",
-    journal = "\href{https://arxiv.org/abs/1706.03762}{arXiv:1706.03762}",
-    year = 2017,
-    langid = "english"
+@inproceedings{Vas17,
+ author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, \L ukasz and Polosukhin, Illia},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {I. Guyon and U. Von Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Attention is All you Need},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf},
+ volume = {30},
+ year = {2017}
 }
 
 %% LSTM
-@conference{Gra08,
-    author = "Graves Alex and Fern and Schmidhuber J¨urgen",
-    title = "Offline Handwriting Recognition with Multidimensional Recurrent Neural Networks",
-    booktitle = "\href{https://www.cs.toronto.edu/~graves/nips_2008.pdf}{Conference on Neural Information Processing Systems}",
-    year = 2008,
-    langid = "english"
+@article{Gra08,
+  title={Offline handwriting recognition with multidimensional recurrent neural networks},
+  author={Graves, Alex and Schmidhuber, J{\"u}rgen},
+  journal={Advances in neural information processing systems},
+  volume={21},
+  year={2008},
+  url={https://www.cs.toronto.edu/~graves/nips_2008.pdf}
 }
 
 %% LSTM
-@conference{Bas14,
-    author = "Bastien Moysset and Théodore Bluche and Maxime Knibbe and Mohamed Faouzi Benzeghiba and Ronaldo Messina",
-    title = "The A2iA Multi-lingual Text Recognition System at the Second Maurdor Evaluation",
-    booktitle = "\href{https://ieeexplore.ieee.org/document/6981036}{14th International Conference on Frontiers in Handwriting Recognition}",
-    year = 2014,
-    langid = "english"
+@inproceedings{Bas14,
+  title={The A2iA multi-lingual text recognition system at the second Maurdor evaluation},
+  author={Moysset, Bastien and Bluche, Th{\'e}odore and Knibbe, Maxime and Benzeghiba, Mohamed Faouzi and Messina, Ronaldo and Louradour, J{\'e}r{\^o}me and Kermorvant, Christopher},
+  booktitle={2014 14th International Conference on Frontiers in Handwriting Recognition},
+  pages={297--302},
+  year={2014},
+  organization={IEEE},
+  url={https://ieeexplore.ieee.org/document/6981036}
 }
 
 %% LSTM
-@conference{Joa17,
-    author = "Joan Puigcerver",
-    title = "Are Multidimensional Recurrent Layers Really Necessary for Handwritten Text Recognition?",
-    booktitle = "\href{https://www.jpuigcerver.net/pubs/jpuigcerver_icdar2017.pdf}{International Conference on Document Analysis and Recognition}",
-    year = 2017,
-    langid = "english"
+@inproceedings{Joa17,
+  title={Are multidimensional recurrent layers really necessary for handwritten text recognition?},
+  author={Puigcerver, Joan},
+  booktitle={2017 14th IAPR international conference on document analysis and recognition (ICDAR)},
+  volume={1},
+  pages={67--72},
+  year={2017},
+  organization={IEEE},
+  url={https://www.jpuigcerver.net/pubs/jpuigcerver_icdar2017.pdf}
 }
 
 %% LSTM
-@conference{The17,
-    author = "Theodore Bluche and Ronaldo Messina",
-    title = "Gated Convolutional Recurrent Neural Networks for Multilingual Handwriting Recognition",
-    booktitle = "\href{https://ieeexplore.ieee.org/document/8270042}{International Conference on Document Analysis and Recognition}",
-    year = 2017,
-    langid = "english"
+@inproceedings{The17,
+  title={Gated convolutional recurrent neural networks for multilingual handwriting recognition},
+  author={Bluche, Th{\'e}odore and Messina, Ronaldo},
+  booktitle={2017 14th IAPR international conference on document analysis and recognition (ICDAR)},
+  volume={1},
+  pages={646--651},
+  year={2017},
+  organization={IEEE},
+  url={https://ieeexplore.ieee.org/document/8270042}
 }
 
 %% DTrOCR
-@article{Mas23,
-    author = "Masato Fujitake",
-    title = "DTrOCR: Decoder-only Transformer for Optical Character Recognition",
-    journal = "\href{https://arxiv.org/abs/2308.15996}{arXiv:2308.15996}",
-    year = 2023,
-    langid = "english"
+@inproceedings{Mas23,
+  title={Dtrocr: Decoder-only transformer for optical character recognition},
+  author={Fujitake, Masato},
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  pages={8025--8035},
+  year={2024},
+  url={https://arxiv.org/abs/2308.15996}
 }
 
 %% Syntetic
-@conference{Mur03,
-    author = "Muriel Helmers and Horst Bunke",
-    title = "Generation and Use of Synthetic Training Data in Cursive Handwriting Recognition",
-    booktitle = "\href{https://www.researchgate.net/publication/221259082_Generation_and_Use_of_Synthetic_Training_Data_in_Cursive_Handwriting_Recognition}{Iberian Conference on Pattern Recognition and Image Analysis}",
-    year = 2003,
-    langid = "english"
+@inproceedings{Mur03,
+  title={Generation and use of synthetic training data in cursive handwriting recognition},
+  author={Helmers, Muriel and Bunke, Horst},
+  booktitle={Pattern Recognition and Image Analysis: First Iberian Conference, IbPRIA 2003, Puerto de Andratx, Mallorca, Spain, JUne 4-6, 2003. Proceedings 1},
+  pages={336--345},
+  year={2003},
+  organization={Springer},
+  url={https://www.researchgate.net/publication/221259082_Generation_and_Use_of_Synthetic_Training_Data_in_Cursive_Handwriting_Recognition}
 }
 
 %% Syntetic
-@conference{She16,
-    author = "Xi Shen and Ronaldo Messina",
-    title = "A Method of Synthesizing Handwritten Chinese Images for Data Augmentation",
-    booktitle = "\href{https://ieeexplore.ieee.org/document/7814049/authors#authors}{15th International Conference on Frontiers in Handwriting Recognition (ICFHR)}",
-    year = 2016,
-    langid = "english"
+@inproceedings{She16,
+  title={A method of synthesizing handwritten chinese images for data augmentation},
+  author={Shen, Xi and Messina, Ronaldo},
+  booktitle={2016 15th International conference on frontiers in handwriting recognition (ICFHR)},
+  pages={114--119},
+  year={2016},
+  organization={IEEE},
+  url={https://ieeexplore.ieee.org/document/7814049/authors}
 }
 
 %% Syntetic
-@article{Alo19,
-    author = "Eloi Alonso and Bastien Moysset and Ronaldo Messina",
-    title = "Adversarial Generation of Handwritten Text Images Conditioned on Sequences",
-    journal = "\href{https://arxiv.org/abs/1903.00277}{arXiv:1903.00277}",
-    year = 2019,
-    langid = "english"
+@inproceedings{Alo19,
+  title={Adversarial generation of handwritten text images conditioned on sequences},
+  author={Alonso, Eloi and Moysset, Bastien and Messina, Ronaldo},
+  booktitle={2019 international conference on document analysis and recognition (ICDAR)},
+  pages={481--486},
+  year={2019},
+  organization={IEEE},
+  url={https://arxiv.org/abs/1903.00277}
 }
 
 %% Dropout
 @article{Sut14,
-    author = "Sutskever Ilya and Krizhevsky Alex and Hinton Geoffrey and Srivastava Nitish and Salakhutdinov Ruslan",
-    title = "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
-    journal = "\href{https://www.cs.toronto.edu/~rsalakhu/papers/srivastava14a.pdf}{Journal of Machine Learning Research 15}",
-    year = 2014,
-    langid = "english"
+  title={Dropout: a simple way to prevent neural networks from overfitting},
+  author={Srivastava, Nitish and Hinton, Geoffrey and Krizhevsky, Alex and Sutskever, Ilya and Salakhutdinov, Ruslan},
+  journal={The journal of machine learning research},
+  volume={15},
+  number={1},
+  pages={1929--1958},
+  year={2014},
+  publisher={JMLR. org},
+  url={https://www.cs.toronto.edu/~rsalakhu/papers/srivastava14a.pdf}
 }
 
 %% Augmentation
-@conference{Cur17,
-    author = "Curtis Wigington and Seth Stewart and Brian Davis and Bill Barrett and Brian Price and Scott Cohen",
-    title = "Data Augmentation for Recognition of Handwritten Words and Lines Using a CNN-LSTM Network",
-    booktitle = "14th IAPR International Conference on Document Analysis and Recognition (ICDAR)",
-    year = 2017,
-    langid = "english"
+@inproceedings{Cur17,
+  title={Data augmentation for recognition of handwritten words and lines using a CNN-LSTM network},
+  author={Wigington, Curtis and Stewart, Seth and Davis, Brian and Barrett, Bill and Price, Brian and Cohen, Scott},
+  booktitle={2017 14th IAPR international conference on document analysis and recognition (ICDAR)},
+  volume={1},
+  pages={639--645},
+  year={2017},
+  organization={IEEE}
 }
 
 %% mixup history
 @article{Cha11,
-    author = "Chawla V. N. and Bowyer W. K. and Hall O. L. and Kegelmeyer P. W.",
-    title = "SMOTE: Synthetic Minority Over-sampling Technique",
-    journal = "\href{https://arxiv.org/abs/1106.1813}{arXiv:1106.1813}",
-    year = 2011,
-    langid = "english"
+  title={SMOTE: synthetic minority over-sampling technique},
+  author={Chawla, Nitesh V and Bowyer, Kevin W and Hall, Lawrence O and Kegelmeyer, W Philip},
+  journal={Journal of artificial intelligence research},
+  volume={16},
+  pages={321--357},
+  year={2002},
+  url={https://arxiv.org/abs/1106.1813}
 }
 
 %% mixup history
 @article{Dev17,
-    author = "DeVries Terrance and Taylor W. Graham",
-    title = "Dataset Augmentation in Feature Space",
-    journal = "\href{https://arxiv.org/abs/1702.05538}{arXiv:1702.05538}",
-    year = 2017,
-    langid = "english"
+  title={Dataset augmentation in feature space},
+  author={DeVries, Terrance and Taylor, Graham W},
+  journal={arXiv preprint arXiv:1702.05538},
+  year={2017},
+  url={https://arxiv.org/abs/1702.05538}
 }
 
 %% main
-@article{Bas19,
-    author = "Bastien Moysset and Ronaldo Messina",
-    title = "Manifold Mixup improves text recognition with CTC loss",
-    journal = "\href{https://arxiv.org/abs/1903.04246}{arXiv:1903.04246}",
-    year = 2019,
-    langid = "english"
+@inproceedings{Bas19,
+  title={Manifold mixup improves text recognition with CTC loss},
+  author={Moysset, Bastien and Messina, Ronaldo},
+  booktitle={2019 International conference on document analysis and recognition (ICDAR)},
+  pages={799--804},
+  year={2019},
+  organization={IEEE},
+  url={https://arxiv.org/abs/1903.04246}
 }
 
 %% ResNet
-@article{Kai15,
-    author = "He Kaiming and Zhang Xiangyu and Ren Shaoqing and Sun Jian",
-    title = "Deep Residual Learning for Image Recognition",
-    journal = "\href{https://arxiv.org/abs/1512.03385}{arXiv:1512.03385}",
-    year = 2015,
-    langid = "english"
+@inproceedings{Kai15,
+  title={Deep residual learning for image recognition},
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={770--778},
+  year={2016},
+  url={https://arxiv.org/abs/1512.03385}
 }
 
 %% Inception
-@article{Sze14,
-    author = "Szegedy Christian and Liu Wei and Jia Yangqing and Sermanet Pierre and Reed Scott and Anguelov Dragomir and Erhan Dumitru and Vanhoucke Vincent and Rabinovich Andrew",
-    title = "Going Deeper with Convolutions",
-    journal = "\href{https://arxiv.org/abs/1409.4842}{arXiv:1409.4842}",
-    year = 2014,
-    langid = "english"
+@inproceedings{Sze14,
+  title={Going deeper with convolutions},
+  author={Szegedy, Christian and Liu, Wei and Jia, Yangqing and Sermanet, Pierre and Reed, Scott and Anguelov, Dragomir and Erhan, Dumitru and Vanhoucke, Vincent and Rabinovich, Andrew},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={1--9},
+  year={2015},
+  url={https://arxiv.org/abs/1409.4842}
 }
 
 %% MobileNet
-@article{San18,
-    author = "Sandler Mark and Howard Andrew and Zhu Menglong and Zhmoginov Andrey and Chen Liang-Chieh",
-    title = "MobileNetV2: Inverted Residuals and Linear Bottlenecks",
-    journal = "\href{https://arxiv.org/abs/1801.04381}{arXiv:1801.04381}",
-    year = 2018,
-    langid = "english"
+@inproceedings{San18,
+  title={Mobilenetv2: Inverted residuals and linear bottlenecks},
+  author={Sandler, Mark and Howard, Andrew and Zhu, Menglong and Zhmoginov, Andrey and Chen, Liang-Chieh},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={4510--4520},
+  year={2018},
+  url={https://arxiv.org/abs/1801.04381}
 }
 
 %% State-of-the-art
 @article{Her21,
-    author = "Diaz Hernandez Daniel and Qin Siyang and Ingle Reeve and Fujii Yasuhisa and Bissacco Alessandro",
-    title = "Rethinking Text Line Recognition Models",
-    journal = "\href{https://arxiv.org/abs/2104.07787}{arXiv:2104.07787}",
-    year = 2021,
-    langid = "english"
+  title={Rethinking text line recognition models},
+  author={Diaz, Daniel Hernandez and Qin, Siyang and Ingle, Reeve and Fujii, Yasuhisa and Bissacco, Alessandro},
+  journal={arXiv preprint arXiv:2104.07787},
+  year={2021},
+  url={https://arxiv.org/abs/2104.07787}
 }
 
 %% BN (batch normalization)
-@article{Iof15,
-    author = "Ioffe Sergey and Szegedy Christian",
-    title = "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
-    journal = "\href{https://arxiv.org/abs/1502.03167}{arXiv:1502.03167}",
-    year = 2015,
-    langid = "english"
+@inproceedings{Iof15,
+  title={Batch normalization: Accelerating deep network training by reducing internal covariate shift},
+  author={Ioffe, Sergey and Szegedy, Christian},
+  booktitle={International conference on machine learning},
+  pages={448--456},
+  year={2015},
+  organization={pmlr},
+  url={https://arxiv.org/abs/1502.03167}
 }
 
 %% Gated Recurrent Convolution Layer (GRCL)
-@inbook{Lux17,
-    author = "In I. Guyon and U. V. Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and and R. Garnett",
-    title = "Gated recurrent convolution neural network for ocr.",
-    booktitle = "Advances in Neural Information Processing Systems",
-    publisher = "Curran Associates",
-    year = 2017,
-    langid = "english"
+@article{Lux17,
+  title={Gated recurrent convolution neural network for ocr},
+  author={Wang, Jianfeng and Hu, Xiaolin},
+  journal={Advances in Neural Information Processing Systems},
+  volume={30},
+  year={2017}
 }
 
 %% Relative Position Embedding
 @article{Sha18,
-    author = "Shaw Peter and Uszkoreit Jakob and Vaswani Ashish",
-    title = "Self-Attention with Relative Position Representations",
-    journal = "\href{https://arxiv.org/abs/1803.02155}{arXiv:1803.02155}",
-    year = 2018,
-    langid = "english"
+  title={Self-attention with relative position representations},
+  author={Shaw, Peter and Uszkoreit, Jakob and Vaswani, Ashish},
+  journal={arXiv preprint arXiv:1803.02155},
+  year={2018},
+  url={https://arxiv.org/abs/1803.02155}
 }
 
 %% LM with decoder
-@article{Fuj17,
-    author = "Fujii Yasuhisa and Driesen Karel and Baccash Jonathan and Hurst Ash and Popat C. Ashok",
-    title = "Sequence-to-Label Script Identification for Multilingual OCR",
-    journal = "\href{https://arxiv.org/abs/1708.04671}{arXiv:1708.04671}",
-    year = 2017,
-    langid = "english"
+@inproceedings{Fuj17,
+  title={Sequence-to-label script identification for multilingual ocr},
+  author={Fujii, Yasuhisa and Driesen, Karel and Baccash, Jonathan and Hurst, Ash and Popat, Ashok C},
+  booktitle={2017 14th IAPR international conference on document analysis and recognition (ICDAR)},
+  volume={1},
+  pages={161--168},
+  year={2017},
+  organization={IEEE},
+  url={https://arxiv.org/abs/1708.04671}
 }
 
 %% Mixup naming
 @article{Hon17,
-    author = "Zhang Hongyi and Cisse Moustapha and Dauphin N. Yann and Lopez-Paz David",
-    title = "mixup: Beyond Empirical Risk Minimization",
-    journal = "\href{https://arxiv.org/abs/1710.09412}{arXiv:1710.09412}",
-    year = 2017,
-    langid = "english"
+  title={mixup: Beyond empirical risk minimization},
+  author={Zhang, Hongyi and Cisse, Moustapha and Dauphin, Yann N and Lopez-Paz, David},
+  journal={arXiv preprint arXiv:1710.09412},
+  year={2017},
+  url={https://arxiv.org/abs/1710.09412}
 }
 
 %% CutMix
-@article{Yun19,
-    author = "Yun Sangdoo and Han Dongyoon and Oh Joon Seong and Chun Sanghyuk and Choe Junsuk and Yoo Youngjoon",
-    title = "CutMix: Regularization Strategy to Train Strong Classifiers with Localizable Features",
-    journal = "\href{https://arxiv.org/abs/1905.04899}{arXiv:1905.04899}",
-    year = 2019,
-    langid = "english"
+@inproceedings{Yun19,
+  title={Cutmix: Regularization strategy to train strong classifiers with localizable features},
+  author={Yun, Sangdoo and Han, Dongyoon and Oh, Seong Joon and Chun, Sanghyuk and Choe, Junsuk and Yoo, Youngjoon},
+  booktitle={Proceedings of the IEEE/CVF international conference on computer vision},
+  pages={6023--6032},
+  year={2019},
+  url={https://arxiv.org/abs/1905.04899}
 }
 
 %% StackMix
 @article{Sho21,
-    author = "Shonenkov Alex and Karachev Denis and Novopoltsev Maxim and Potanin Mark and Dimitrov Denis",
-    title = "StackMix and Blot Augmentations for Handwritten Text Recognition",
-    journal = "\href{https://arxiv.org/abs/2108.11667}{arXiv:2108.11667}",
-    year = 2021,
-    langid = "english"
+  title={StackMix and Blot augmentations for handwritten text recognition},
+  author={Shonenkov, Alex and Karachev, Denis and Novopoltsev, Maxim and Potanin, Mark and Dimitrov, Denis},
+  journal={arXiv preprint arXiv:2108.11667},
+  year={2021},
+  url={https://arxiv.org/abs/2108.11667}
 }
 
 %% Generalization
 @article{Pet98,
-    author = "Peter Bartlett and John Shawe-Taylor",
-    title = "Generalization Performance of Support Vector Machines and Other Pattern Classifiers",
-    journal = "\href{https://direct.mit.edu/books/edited-volume/5416/chapter-abstract/3957027/Generalization-Performance-of-Support-Vector?redirectedFrom=fulltext}{Advances in Kernel Methods: Support Vector Learning}",
-    year = 1998,
-    langid = "english"
+  title={Generalization performance of support vector machines and other pattern classifiers},
+  author={Bartlett, Peter and Shawe-Taylor, John},
+  journal={Advances in Kernel methods—support vector learning},
+  pages={43--54},
+  year={1999},
+  publisher={Citeseer},
+  url={https://direct.mit.edu/books/edited-volume/5416/chapter-abstract/3957027/Generalization-Performance-of-Support-Vector?redirectedFrom=fulltext}
 }
 
 %% AdamW
 @article{Los17,
-    author = "Loshchilov Ilya and Hutter Frank",
-    title = "Decoupled Weight Decay Regularization",
-    journal = "\href{https://arxiv.org/abs/1711.05101}{arXiv:1711.05101}",
-    year = 2017,
-    langid = "english"
+  title={Decoupled weight decay regularization},
+  author={Loshchilov, Ilya and Hutter, Frank},
+  journal={arXiv preprint arXiv:1711.05101},
+  year={2017},
+  url={https://arxiv.org/abs/1711.05101}
 }

@@ -2,8 +2,58 @@
 \addcontentsline{toc}{section}{Приложение}
 \label{sec:Apendix} \index{Apendix}
 
-\subsection{Позиция mixup}
+\subsection{Количество данных}
 
+\begin{longtable}{cccc}
+\centering
+\includegraphics[scale=0.2]{./images/mixup_size/100_ValidLoss.png} & \includegraphics[scale=0.2]{./images/mixup_size/100_CharAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/100_FragAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/100_WordAcc.png}\\
+\includegraphics[scale=0.2]{./images/mixup_size/500_ValidLoss.png} & \includegraphics[scale=0.2]{./images/mixup_size/500_CharAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/500_FragAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/500_WordAcc.png}\\
+\includegraphics[scale=0.2]{./images/mixup_size/1000_ValidLoss.png} & \includegraphics[scale=0.2]{./images/mixup_size/1000_CharAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/1000_FragAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/1000_WordAcc.png}\\
+\includegraphics[scale=0.2]{./images/mixup_size/4000_ValidLoss.png} & \includegraphics[scale=0.2]{./images/mixup_size/4000_CharAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/4000_FragAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/4000_WordAcc.png}\\
+\includegraphics[scale=0.2]{./images/mixup_size/8000_ValidLoss.png} & \includegraphics[scale=0.2]{./images/mixup_size/8000_CharAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/8000_FragAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/8000_WordAcc.png}\\
+\includegraphics[scale=0.2]{./images/mixup_size/10000_ValidLoss.png} & \includegraphics[scale=0.2]{./images/mixup_size/10000_CharAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/10000_FragAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/10000_WordAcc.png}\\
+\caption{Сравнение ванильной модели и mixup на различных размерах датасета. }
+\label{tab:mixup_size}
+\end{longtable}
+
+\newpage
+
+\begin{longtable}{cc}
+\centering
+\includegraphics[scale=0.4]{./images/mixup_size/all/ValidLoss.png} & \includegraphics[scale=0.4]{./images/mixup_size/all/CharAcc.png}\\
+\includegraphics[scale=0.4]{./images/mixup_size/all/FragAcc.png} & \includegraphics[scale=0.4]{./images/mixup_size/all/WordAcc.png}\\
+\caption{Сравнение метрик для ванильной модели и mixup в зависимости от размера датасета.}
+\label{tab:mixup_size_all}
+\end{longtable}
+
+\begin{table}[]
+\centering
+$\begin{array}{|c|c|c|c|c|c|}
+\hline
+type & dataset size & ValidLoss & CharAcc & FragAcc & WordAcc \\ [0.5ex] 
+\hline\hline
+mixup & 6400 & 16.5 & 60.63 & 16.88 & 13.24 \\ 
+vanilla & 6400 & 20.78 & 57.12 & 14.43 & 9.56 \\ 
+mixup & 32000 & 9.81 & 76.51 & 34.25 & 36.2 \\ 
+vanilla & 32000 & 11.91 & 74.39 & 31.23 & 32.06 \\ 
+mixup & 64000 & 8.0 & 80.56 & 40.57 & 42.75 \\ 
+vanilla & 64000 & 9.76 & 78.69 & 37.84 & 39.89 \\ 
+mixup & 256000 & 5.71 & 86.01 & 51.3 & 54.95 \\ 
+vanilla & 256000 & 6.51 & 85.03 & 50.3 & 53.52 \\ 
+mixup & 512000 & 4.99 & 87.65 & 56.19 & 59.9 \\ 
+vanilla & 512000 & 5.46 & 87.11 & 55.07 & 58.86 \\ 
+mixup & 640000 & 4.85 & 88.05 & 56.87 & 60.93 \\ 
+vanilla & 640000 & 5.55 & 87.56 & 56.28 & 59.93 \\ 
+\hline
+\end{array}$ 
+\caption{Функция ошибки и метрики для различных размеров датасета.} 
+\label{tab:mixup_size_main} 
+\end{table}
+\FloatBarrier
+
+
+\subsection{Позиция mixup}
+\begin{comment}
 \begin{longtable}{cccc}
 \centering
 \includegraphics[scale=0.2]{./images/mixup_position/before_block_2;before_block_4_ValidLoss.png} & \includegraphics[scale=0.2]{./images/mixup_position/before_block_2;before_block_4_CharAcc.png} & \includegraphics[scale=0.2]{./images/mixup_position/before_block_2;before_block_4_FragAcc.png} & \includegraphics[scale=0.2]{./images/mixup_position/before_block_2;before_block_4_WordAcc.png}\\
@@ -46,25 +96,45 @@
 \caption{Функция ошибки и различные метрики для всех рассматриваемых наборов позиций mixup.}
 \label{tab:mixup_position_metrics}
 \end{longtable}
+\end{comment}
 
-\subsection{Количество данных}
-
-\begin{longtable}{cccc}
+\FloatBarrier
+\begin{table}[]
 \centering
-\includegraphics[scale=0.2]{./images/mixup_size/100_ValidLoss.png} & \includegraphics[scale=0.2]{./images/mixup_size/100_CharAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/100_FragAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/100_WordAcc.png}\\
-\includegraphics[scale=0.2]{./images/mixup_size/500_ValidLoss.png} & \includegraphics[scale=0.2]{./images/mixup_size/500_CharAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/500_FragAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/500_WordAcc.png}\\
-\includegraphics[scale=0.2]{./images/mixup_size/1000_ValidLoss.png} & \includegraphics[scale=0.2]{./images/mixup_size/1000_CharAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/1000_FragAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/1000_WordAcc.png}\\
-\includegraphics[scale=0.2]{./images/mixup_size/4000_ValidLoss.png} & \includegraphics[scale=0.2]{./images/mixup_size/4000_CharAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/4000_FragAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/4000_WordAcc.png}\\
-\includegraphics[scale=0.2]{./images/mixup_size/8000_ValidLoss.png} & \includegraphics[scale=0.2]{./images/mixup_size/8000_CharAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/8000_FragAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/8000_WordAcc.png}\\
-\includegraphics[scale=0.2]{./images/mixup_size/10000_ValidLoss.png} & \includegraphics[scale=0.2]{./images/mixup_size/10000_CharAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/10000_FragAcc.png} & \includegraphics[scale=0.2]{./images/mixup_size/10000_WordAcc.png}\\
-\caption{Сравнение ванильной модели и mixup на различных размерах датасета. }
-\label{tab:mixup_size}
-\end{longtable}
-
-\begin{longtable}{cc}
-\centering
-\includegraphics[scale=0.4]{./images/mixup_size/all/ValidLoss.png} & \includegraphics[scale=0.4]{./images/mixup_size/all/CharAcc.png}\\
-\includegraphics[scale=0.4]{./images/mixup_size/all/FragAcc.png} & \includegraphics[scale=0.4]{./images/mixup_size/all/WordAcc.png}\\
-\caption{Сравнение метрик для ванильной модели и mixup в зависимости от размера датасета.}
-\label{tab:mixup_size_all}
-\end{longtable}
+$\begin{array}{|c|c|c|c|c|}
+\hline
+points & ValidLoss & CharAcc & FragAcc & WordAcc \\ [0.5ex] 
+\hline\hline
+\text{before-block-0;before-block-3} & 7.92 & 80.71 & 40.77 & 43.56 \\ 
+\text{before-block-0;before-block-2;before-block-4} & 7.95 & 80.62 & 40.62 & 42.97 \\ 
+\text{before-block-2;before-block-4} & 7.96 & 80.53 & 40.07 & 42.78 \\ 
+\text{before-block-0;before-block-4} & 7.97 & 80.48 & 40.02 & 42.85 \\ 
+\text{before-block-1;before-block-3} & 8.02 & 80.48 & 40.66 & 42.87 \\ 
+\text{before-block-1;before-block-4} & 8.04 & 80.33 & 40.05 & 42.8 \\ 
+\text{after-blocks;before-block-0} & 8.08 & 80.44 & 40.14 & 42.66 \\ 
+\text{before-block-0;before-block-2} & 8.08 & 80.43 & 40.4 & 42.97 \\ 
+\text{after-final-conv1;before-block-0;before-block-2} & 8.09 & 80.39 & 40.59 & 42.89 \\ 
+\text{after-final-conv1;before-block-2;before-block-4} & 8.09 & 80.14 & 40.04 & 42.17 \\ 
+\text{after-final-conv1;before-block-0;before-block-3} & 8.1 & 80.17 & 39.44 & 42.12 \\ 
+\text{after-blocks;before-block-0;before-block-2} & 8.1 & 80.41 & 39.91 & 42.75 \\ 
+\text{after-blocks;before-block-1;before-block-3} & 8.11 & 80.39 & 40.54 & 42.99 \\ 
+\text{after-blocks;before-block-0;before-block-3} & 8.13 & 80.49 & 40.3 & 42.94 \\ 
+\text{after-final-conv1;before-block-3} & 8.17 & 80.33 & 40.51 & 42.8 \\ 
+\text{after-final-conv1;before-block-1} & 8.18 & 80.24 & 39.9 & 42.65 \\ 
+\text{after-final-conv1;before-block-1;before-block-3} & 8.19 & 80.41 & 40.36 & 42.91 \\ 
+\text{after-blocks;before-block-3} & 8.21 & 80.4 & 40.3 & 42.82 \\ 
+\text{after-final-conv1;before-block-0;before-block-4} & 8.21 & 80.2 & 39.96 & 42.16 \\ 
+\text{after-final-conv1;before-block-1;before-block-4} & 8.22 & 80.13 & 40.21 & 42.6 \\ 
+\text{after-final-conv1;before-block-0} & 8.24 & 80.21 & 39.68 & 42.42 \\ 
+\text{after-blocks;before-block-2} & 8.27 & 80.13 & 39.63 & 42.18 \\ 
+\text{after-final-conv1;before-block-2} & 8.29 & 79.99 & 40.15 & 42.45 \\ 
+\text{after-final-conv1;before-block-4} & 8.35 & 79.7 & 38.99 & 41.51 \\ 
+\text{after-blocks;before-block-1} & 8.4 & 79.99 & 39.81 & 42.27 \\ 
+\text{no mixup} & 9.76 & 78.69 & 37.84 & 39.89 \\ [1ex] 
+\hline
+\end{array}$ 
+\caption{Функция ошибки и метрики для различных наборов позиций mixup. Размер датасета N = 128'000 образцов.} 
+\label{tab:mixup_position} 
+\end{table}
+\FloatBarrier
+\newpage
